@@ -16,3 +16,13 @@
 .find-icons__icon span {
     margin-top: 10px;
 }
+
+.screen-header__icons span {
+    position: relative;
+}
+
+.screen-header__icons-dot {
+    position: absolute;
+    top: -4px;
+    right: -6px;
+}

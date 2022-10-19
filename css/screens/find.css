@@ -45,7 +45,7 @@
     margin: 90px 0px;
     display: block;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-color);
 }
 
@@ -63,6 +63,8 @@
 
 .open-post {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .open-post__title {
@@ -104,4 +106,31 @@
 .open-post__members-status {
     color: #ffb0e0;
     font-size: 12px;
+}
+
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__photo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.open-post__heart-count {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position:absolute;
+    right: 5px;
+    top: 50px;
+    font-size: 12px;
+}
+
+.open-post__heart-count span {
+    margin-left: 3px;
 }

@@ -40,6 +40,7 @@
 .message-row {
     width: 100%;
     display: flex;
+    margin-bottom: 15px;
 }
 
 .message-row img {
@@ -60,7 +61,7 @@
 }
 
 .message__bubble {
-    font-size: 17px;
+    font-size: 16px;
     background-color: white;
     padding: 8px 10px;
     border-radius: 14px;
@@ -73,3 +74,31 @@
     opacity: 0.8;
     font-size: 12px;
 }
+
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 14px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
+
+/* 
+bubble과 time 시간 바꾸는 2방법
+.message-row--own .message__bubble{
+    order: 1;
+}
+
+.message-row--own .message__time{
+    order: 0;
+} */
+
+

@@ -124,7 +124,7 @@ bubble과 time 시간 바꾸는 2방법
     align-items: center;
     padding: 5px 30px 5px 15px; 
     box-sizing: border-box;
-    transition: transform all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -181,26 +181,23 @@ bubble과 time 시간 바꾸는 2방법
     outline: none;
 }
 
-
 .reply .reply__column:first-child,
-.reply fa-face-laugh-wink,
+.reply .fa-face-laugh-wink,
 .reply button {
-    transition: opacity: 0 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
-
 .reply:focus-within .reply__column:first-child,
-.reply:focus-within fa-face-laugh-wink,
+.reply:focus-within .fa-face-laugh-wink,
 .reply:focus-within button {
     opacity: 0;
 }
 
 .reply:focus-within input {
-    width: 93vw;
-    transform: translateX(-11%) translateY(-80px);
+    width: 90vw;
+    transform: translateX(-10%) translateY(-45px); 
 }
 
 .reply:focus-within {
-    transform: translateY(80px);
-}
-
+    transform: translateY(45px);
+} 
